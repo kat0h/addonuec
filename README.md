@@ -44,7 +44,36 @@ https://chrome.google.com/webstore/detail/addonuec/mckbbmpkeolpgdbbgajafjbdkncjf
 
 インストール後は拡張機能の設定からAddonUECの[詳細]を開き、[拡張機能のオプション]から設定を行ってください。
 
+## ビルドと開発
+
+### 準備
+開発にはNode.jsとnpmが必要です。
+また、以下のコマンドでMozillaのweb-extツールをインストールしてください。
+```bash
+npm install --global web-ext
+```
+もし`web-ext`コマンドの実行で問題が発生する場合は、`npx`をコマンドの前に付けて(例: `npx web-ext build`)実行してください。
+
+### Firefox版のビルド
+配布用のパッケージ(.zipファイル)を作成します。
+1. `firefox/sources`ディレクトリに移動します。
+2. 以下のコマンドを実行します。
+```bash
+web-ext build
+```
+`firefox/sources/web-ext-artifacts`ディレクトリにパッケージが生成されます。
+
+### Firefox版の開発とテスト
+動作を確認しながら開発を進めるには、以下の手順が便利です。
+1. `firefox/sources`ディレクトリに移動します。
+2. 以下のコマンドを実行します。
+```bash
+web-ext run
+```
+このコマンドを実行すると、拡張機能が一時的にインストールされた新しいFirefoxが起動します。ソースコードを編集・保存すると、変更が自動的に反映されます。テストを終了するには、ターミナルでCtrl+Cを押してください。
+
 ## 権利表記
 Copyright (C) 2021 medit
+Copyright (C) 2026 kat0h
 
 This program is distributed under GPLv3. See [LICENSE](./LICENSE).
