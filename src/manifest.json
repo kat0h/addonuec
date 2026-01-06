@@ -1,16 +1,17 @@
 //----------------------------------------------------------------
 //    AddonUEC
 //    Copyright (C) 2021 medit
+//    Copyright (C) 2026 kat0h
 //    This program is distributed under GPLv3. See LICENSE.
 //----------------------------------------------------------------
 
 {
 	"manifest_version": 2,
 	"name": "AddonUEC",
-	"author": "medit",
-	"version": "1.3.0",
+	"author": "kat0h",
+	"version": "1.3.1",
 	"description": "学務情報システムなどの不便を解消する電通大生専用拡張機能",
-	"homepage_url": "https://github.com/meditq/addonuec",
+	"homepage_url": "https://github.com/kat0h/addonuec",
 
 	"icons": {
 		"128": "icon.png"
