@@ -27,7 +27,7 @@
 			"js": ["campusweb.js"]
 		},
 		{
-			"matches": ["https://shibboleth.cc.uec.ac.jp/mfa/MFAuth.php?*"],
+			"matches": ["https://shibboleth.cc.uec.ac.jp/fl/saml/mfa/authentication?*"],
 			"js": ["otp.js"]
 		},
 		{
